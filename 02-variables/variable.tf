@@ -7,11 +7,10 @@ output "sample" {
 
 variable "testing" {
   default = [
-  "hello"
-   100
+   "hello"
+    100
   ]
 }
-
 output "testing" {
   value = var.testing[0]
 }
