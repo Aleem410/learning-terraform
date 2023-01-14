@@ -25,3 +25,8 @@ variable "sampleXX" {
 output resultXX {
   value = var.sampleXX["number"]
 }
+
+output resultYY {
+  value = lookup(sampleXX, string, null)
+
+}
