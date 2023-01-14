@@ -7,7 +7,7 @@ output "sample" {
 
 variable "testing" {
   default = [
-   "hello"
+   "hello",
     100
   ]
 }
