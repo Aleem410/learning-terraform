@@ -11,6 +11,6 @@ variable "testing" {
     100
   ]
 }
-output "testing" {
+output "result" {
   value = var.testing[0]
 }
