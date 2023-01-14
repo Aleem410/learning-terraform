@@ -27,6 +27,6 @@ output resultXX {
 }
 
 output resultYY {
-  value = lookup(sampleXX, "string", null)
+  value = lookup(var.sampleXX, "string", null)
 
 }
