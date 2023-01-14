@@ -14,7 +14,7 @@ output "AMI_ID" {
 
 data "aws_ec2_spot_price" "NEW" {
   instance_type     = "t3.small"
-  availability_zone = "us-east-1"
+  availability_zone = "us-east-1a"
 }
 output "PRICE" {
   value = data.aws_ec2_spot_price.NEW.id
