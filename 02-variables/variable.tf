@@ -23,5 +23,5 @@ variable "sampleXX" {
 }
 
 output resultXX {
-  value = var.sampleXX[number]
+  value = var.sampleXX["number"]
 }
