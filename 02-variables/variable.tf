@@ -14,3 +14,14 @@ variable "testing" {
 output "result" {
   value = var.testing[0]
 }
+
+variable "sampleXX" {
+  default = {
+    string = "hello"
+    number = 100
+  }
+}
+
+output resultXX {
+  value = var.sampleXX[string]
+}
