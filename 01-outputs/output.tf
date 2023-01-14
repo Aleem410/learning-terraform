@@ -1,5 +1,6 @@
 output "test" {
   value = "hello wolrd"
+}
 
 data "aws_ami" "example" {
   most_recent = true
