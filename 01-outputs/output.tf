@@ -4,6 +4,6 @@ data "aws_ami" "example" {
   owners = ["827190588206"]
 }
 output "AMI_ID" {
-  value = data.aws_ami.example.id
+  value = "data.aws_ami.example.id""
 }
 
