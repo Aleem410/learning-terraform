@@ -11,8 +11,3 @@ data "aws_ami" "example" {
 output "AMI_ID" {
   value = data.aws_ami.example.id
 }
-
-resource "aws_ec2_host" "table" {
-  instance_type     = "t3.micro"
-  availability_zone = "us-east-1"
-}
