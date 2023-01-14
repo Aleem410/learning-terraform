@@ -1,3 +1,6 @@
+output "test" {
+  value = "hello wolrd"
+
 data "aws_ami" "example" {
   most_recent = true
   name_regex  = "Centos-8-DevOps-Practice"
@@ -5,5 +8,5 @@ data "aws_ami" "example" {
 }
 
 output "AMI_ID" {
-  value = "data.aws_ami.example.id"
+  value = data.aws_ami.example.id
 }
