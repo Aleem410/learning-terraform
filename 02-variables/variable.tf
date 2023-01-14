@@ -15,6 +15,10 @@ output "result" {
   value = var.testing[0]
 }
 
+output "value" {
+  value = element(var.testing, 1)
+}
+
 variable "sampleXX" {
   default = {
     string = "hello"
