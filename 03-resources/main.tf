@@ -40,6 +40,6 @@
 
 variable "games" {}
 
-output "games" {
-  value = var.games
-}
+#output "games" {
+#  value = var.games
+#}
