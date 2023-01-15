@@ -38,8 +38,8 @@
 #  }
 #}
 
-variable "Games" {}
+variable "games" {}
 
 output "games" {
-  value = var.Games
+  value = var.games
 }

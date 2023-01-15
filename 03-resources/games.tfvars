@@ -1,1 +1,1 @@
-Games = ["cricket", "Football"]
+games = ["cricket", "Football"]
