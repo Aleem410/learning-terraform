@@ -47,5 +47,5 @@ output FRUITS {
 #
 #output "veg" {
 #  value = var.vegetables
-}
+#}
 
