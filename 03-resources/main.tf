@@ -3,7 +3,7 @@ resource "aws_instance" "test" {
   instance_type = "t3.small"
 }
 
-output "public_ip" {
-  value = aws_instance.test.public_ip
+output "state" {
+  value = aws_instance.test.instance_state
 
 }
