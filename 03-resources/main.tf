@@ -1,10 +1,13 @@
-resource "aws_instance" "test" {
+resource "aws_spot_instance_request" "test" {
   ami           = "ami-0a017d8ceb274537d"
-  instance_type = "t3.small"
-  availability_zone = "us-east-1a"
+  instance_type = "t3.micro"
+
+  tags = {
+    Name = "test"
+  }
 }
 
-output "state" {
-  value = aws_instance.test.instance_state
+output "public_ip" {
+  value = aws_spot_instance_request.test.public_ip
 
 }
