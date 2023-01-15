@@ -37,8 +37,11 @@ output resultYY {
 
 }
 
-variable fruits{}
+variable "fruits" {}
 
 output FRUITS {
   value = var.fruits
 }
+
+variable "vegetables" {}
+
