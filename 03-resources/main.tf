@@ -15,7 +15,7 @@
 resource "github_repository" "test_repository" {
   name        = "test"
   description = "My awesome codebase"
-
+  homepage_url = "https://github.com/Aleem410"
   visibility = "public"
 
 }
