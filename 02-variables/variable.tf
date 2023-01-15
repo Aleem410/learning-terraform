@@ -45,3 +45,7 @@ output FRUITS {
 
 variable "vegetables" {}
 
+output "veg" {
+  value = var.vegetables
+}
+
