@@ -15,6 +15,7 @@ output "result" {
   value = var.testing[0]
 }
 
+#accessing variables with functions (element)
 output "value" {
   value = element(var.testing, 1)
 }
@@ -30,7 +31,14 @@ output resultXX {
   value = var.sampleXX["number"]
 }
 
+#accessing variables map with lookup
 output resultYY {
   value = lookup(var.sampleXX, "string", null)
 
+}
+
+variable fruits{}
+
+output FRUITS {
+  value = var.fruits
 }
