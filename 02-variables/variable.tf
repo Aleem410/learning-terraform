@@ -43,9 +43,9 @@ output FRUITS {
   value = var.fruits
 }
 
-variable "vegetables" {}
-
-output "veg" {
-  value = var.vegetables
+#variable "vegetables" {}
+#
+#output "veg" {
+#  value = var.vegetables
 }
 
