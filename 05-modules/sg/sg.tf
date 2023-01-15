@@ -29,11 +29,11 @@ output "sgid" {
 
 resource "aws_security_group" "allow_all" {
   name        = "allow_all"
-  description = "Allow TLS inbound traffic"
+  description = "Allow all inbound traffic"
   vpc_id      = "vpc-00a494e89f26a41c5"
 
   ingress {
-    description      = "TLS from VPC"
+    description      = "all from VPC"
     from_port        = 0
     to_port          = 0
     protocol         = "-1"
