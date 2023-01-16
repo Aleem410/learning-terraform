@@ -15,7 +15,7 @@ variable "amis" {
   default = [
     "ami-0a017d8ceb274537d",
     "ami-0b5eea76982371e91"
- ]
+  ]
 }
 resource "aws_spot_instance_request" "test1" {
   count         = 2
