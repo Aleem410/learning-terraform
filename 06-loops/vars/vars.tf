@@ -5,7 +5,9 @@ variable "amis" {
     "ami-0b5eea76982371e91"
   ]
 }
-
+output "amis" {
+  value = "var.amis"
+}
 resource "aws_spot_instance_request" "test1" {
   count         = 2
   #  ami           = var.amis[count.index]

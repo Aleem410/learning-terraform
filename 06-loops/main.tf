@@ -11,11 +11,13 @@
 #  value = aws_spot_instance_request.test.*.public_ip
 #}
 
-
 module "vars" {
   source = "./vars"
-  sgid = module.sg.sgid
+  sgid = module.sg2.sgid
 }
 
+module "sg2" {
+  source = "./sg2"
+}
 
 
