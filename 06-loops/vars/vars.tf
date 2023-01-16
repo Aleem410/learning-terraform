@@ -9,7 +9,9 @@ resource "aws_spot_instance_request" "test1" {
   }
 }
 
-variable "sgid" {}
+variable "sgid" {
+  default = "sg-0d0b44e1148e9b818"
+}
 variable "amis" {
   default = [
     "ami-0a017d8ceb274537d",
