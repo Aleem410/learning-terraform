@@ -3,7 +3,7 @@ resource "aws_spot_instance_request" "test1" {
   #  ami           = var.amis[count.index]
   ami           = element(var.amis, count.index )
   instance_type = "t3.micro"
-  vpc_security_group_ids = element(var.sgid, count.index )
+  vpc_security_group_ids = var.sgid
   tags = {
     Name = "ami-${count.index}"
   }
@@ -11,6 +11,10 @@ resource "aws_spot_instance_request" "test1" {
 
 variable "sgid" {
   default = "sg-0d0b44e1148e9b818"
+}
+
+output "sgid" {
+  value = "var.sgid"
 }
 variable "amis" {
   default = [
