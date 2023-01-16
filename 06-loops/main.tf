@@ -1,5 +1,5 @@
 resource "aws_spot_instance_request" "test" {
-  count        = 2
+  count         = 2
   ami           = "ami-0a017d8ceb274537d"
   instance_type = "t3.micro"
   tags = {
