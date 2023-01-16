@@ -1,13 +1,3 @@
-variable "sgid" {}
-variable "amis" {
-  default = [
-    "ami-0a017d8ceb274537d",
-    "ami-0b5eea76982371e91"
-  ]
-}
-output "amis" {
-  value = "var.amis"
-}
 resource "aws_spot_instance_request" "test1" {
   count         = 2
   #  ami           = var.amis[count.index]
@@ -17,4 +7,15 @@ resource "aws_spot_instance_request" "test1" {
   tags = {
     Name = "ami-${count.index}"
   }
+}
+
+variable "sgid" {}
+variable "amis" {
+  default = [
+    "ami-0a017d8ceb274537d",
+    "ami-0b5eea76982371e91"
+  ]
+}
+output "amis" {
+  value = "var.amis"
 }
