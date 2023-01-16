@@ -13,11 +13,11 @@
 
 module "vars" {
   source = "./vars"
-  sgid = module.sg2.sgid
+#  sgid = module.sg2.sgid
 }
 
-module "sg2" {
-  source = "./sg2"
-}
+#module "sg2" {
+#  source = "./sg2"
+#}
 
 
