@@ -4,6 +4,10 @@ resource "aws_spot_instance_request" "test" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = "instance-$(count.index)"
+    Name = "instance-${count.index}"
   }
+}
+
+output "poublic_ip" {
+  value = aws_spot_instance_request.test.*.public_ip
 }
