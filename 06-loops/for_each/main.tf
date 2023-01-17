@@ -16,6 +16,6 @@ resource "aws_spot_instance_request" "test" {
   instance_type = each.value["instance_type"]
 
   tags = {
-    Name = "instance-${count.index}"
+    Name = "instance-${each.key}"
   }
 }
