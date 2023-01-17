@@ -6,7 +6,7 @@ resource "aws_spot_instance_request" "lab1_instance" {
   ami = "ami-0a017d8ceb274537d"
   instance_type = var.instance_type
   vpc_security_group_ids = [var.sgid]
-  User_data = <<-EOF
+  user_data = <<-EOF
       #!/bin/sh
       sudo apt-get update
       sudo apt install -y apache2
