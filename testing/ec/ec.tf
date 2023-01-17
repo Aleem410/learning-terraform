@@ -5,7 +5,7 @@ resource "aws_spot_instance_request" "test" {
   vpc_security_group_ids = [var.sgid]
 
   tags = {
-    Name = "test"
+    Name = "ami-${count.index}"
   }
 }
 
