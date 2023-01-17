@@ -2,7 +2,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_spot_instance_request" "lab1_instance" {
+resource "aws_spot_instance_request" "lab2_instance" {
   ami = "ami-0a017d8ceb274537d"
   instance_type = "t3.micro"
   vpc_security_group_ids = [var.sgid]
