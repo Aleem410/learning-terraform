@@ -21,9 +21,9 @@ resource "aws_spot_instance_request" "lab2_instance" {
   }
 }
 
-resource "aws_security_group" "allow_tls" {
-  name        = "allow_tls"
-  description = "Allow TLS inbound traffic"
+resource "aws_security_group" "allow_tls1" {
+  name        = "allow_tls1"
+  description = "Allow TLS1 inbound traffic"
   vpc_id      = "vpc-00a494e89f26a41c5"
 
   ingress {
@@ -50,7 +50,7 @@ resource "aws_security_group" "allow_tls" {
   }
 
   tags = {
-    Name = "allow_tls"
+    Name = "allow_tls1"
   }
 }
 
