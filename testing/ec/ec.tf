@@ -1,5 +1,5 @@
 resource "aws_spot_instance_request" "test" {
-  ami           = "ami-0a017d8ceb274537d"
+  ami           = var.ami
   instance_type = "t3.micro"
   vpc_security_group_ids = [var.sgid]
 
@@ -9,4 +9,5 @@ resource "aws_spot_instance_request" "test" {
 }
 
 variable "sgid" {}
+variable "ami" {}
 
