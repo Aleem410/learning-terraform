@@ -8,6 +8,6 @@ resource "aws_spot_instance_request" "test" {
   }
 }
 
-output "poublic_ip" {
+output "public_ip" {
   value = aws_spot_instance_request.test.*.public_ip
 }
