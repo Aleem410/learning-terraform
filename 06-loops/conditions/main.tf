@@ -13,7 +13,7 @@ variable "instances" {
 resource "aws_spot_instance_request" "test" {
   for_each = var.instances
   ami           = each.value["ami"]
-  instance_type = each.value["instance_type"] == "" ? "t2.micro" : each.value["instance_type"]
+  instance_type = lookup(each.value, "instance_type", null) == null ? "t2.micro" : each.value["instance_type"]
 
   tags = {
     Name = "instance-${each.key}"
