@@ -5,7 +5,7 @@ module "security_group" {
 module "ec" {
   source = "./ec"
   sgid = module.security_group.sgid
-  ami = "ami-0a017d8ceb274537d"
+#  ami = "ami-0a017d8ceb274537d"
 }
 
 #module "ec1" {
