@@ -1,5 +1,6 @@
 resource "aws_spot_instance_request" "test" {
   ami           = var.amis[count.index]
+#  ami           =element(var.amis, count.index )
   count  = 2
   instance_type = "t3.micro"
 
