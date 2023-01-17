@@ -8,6 +8,5 @@ resource "aws_spot_instance_request" "test" {
   }
 }
 
-variable "sgid" {}
-variable "ami" {}
+
 

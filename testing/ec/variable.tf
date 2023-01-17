@@ -1,0 +1,2 @@
+variable "sgid" {}
+variable "ami" {}
